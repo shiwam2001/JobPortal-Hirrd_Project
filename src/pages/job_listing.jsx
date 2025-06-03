@@ -1,5 +1,5 @@
 import React from 'react'
-import { getJobs } from '@/api/apiJobs'
+
 import { useEffect, useState } from 'react'
 import useFetch from '@/hooks/use-fetch'
 import { useSession, useUser } from '@clerk/clerk-react'
@@ -19,6 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { State } from 'country-state-city'
+import getJobs from '@/api/apiJobs'
 
 
 const JobListing = () => {

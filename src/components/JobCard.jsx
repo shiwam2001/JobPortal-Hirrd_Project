@@ -5,7 +5,8 @@ import { Heart, MapPinIcon, Trash2Icon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 import useFetch from '@/hooks/use-fetch'
-import { saveJob } from '@/api/apiJobs'
+import saveJob from '@/api/apiSaveJob'
+
 
 const JobCard = ({
     job,
@@ -19,7 +20,7 @@ const JobCard = ({
         fn: fnSavedJobs,
         data: savedJobs,
         loading: loadingSavedJobs,
-        error } = useFetch(saveJob, {alreadySaved: saved });
+        error } = useFetch( saveJob , {alreadySaved: saved });
 
     const { user } = useUser()
 

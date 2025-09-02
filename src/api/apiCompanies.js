@@ -1,4 +1,4 @@
-import supabaseClient, { supabaseUrl } from "@/utils/supabase";
+import supabaseClient from "@/utils/supabase";
 
 
 export default async function getCompanies(token) {
